@@ -10,6 +10,7 @@ public class OperationsBinaryString {
         int val = str.charAt(0)-'0';
         for(int i=1; i<str.length();){
             char ch = str.charAt(i);
+            //System.out.println(ch);
             i++;
             if(ch == 'A'){
                 val = val & (str.charAt(i)-'0');
