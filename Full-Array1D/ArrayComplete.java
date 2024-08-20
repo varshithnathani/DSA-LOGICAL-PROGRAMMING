@@ -1,5 +1,5 @@
 import java.util.*;
-public class ArrayComp {
+public class ArrayComplete {
     public static void main(String[] args) {
         Scanner SC = new Scanner(System.in);
         int n = SC.nextInt();
