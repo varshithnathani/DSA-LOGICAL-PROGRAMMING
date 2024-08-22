@@ -1,0 +1,16 @@
+A collection represents the group of objects, known as elements.
+ 
+ Some Common Methods
+    Add(Obj j);
+    remove(obj j);
+    size();
+    isEmpty();
+    Contains(Obj j);
+    clear
+
+    // List --> Extends Collections
+    add(index, val);
+    get(index)
+    set(index, val);
+    remove(index);
+    indexOf(Obj j);
