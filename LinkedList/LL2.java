@@ -3,13 +3,19 @@ import java.util.*;
 public class LL2 {
 
     private Node head;
+    private int size;
+    LL2(){
+        this.size = 0;
+    }
 
     class Node{
         String data;
         Node next;
         Node(String data){
             this.data = data;
-            this.next = null;
+            next = null;
+            size++;
+
         }
     }
 
@@ -43,6 +49,7 @@ public class LL2 {
             System.out.println("List is not present");
             return;
         }
+
         Node currNode = head;
         while(currNode!= null ){
             System.out.print(currNode.data+"->");
@@ -57,6 +64,7 @@ public class LL2 {
             System.out.println("List is Empty");
             return;
         }
+        size--;
         head = head.next;
     }
 
@@ -65,6 +73,7 @@ public class LL2 {
             System.out.println("List is Empty");
             return;
         }
+        size--;
         if(head.next == null){
             head = null;
         }
@@ -76,6 +85,10 @@ public class LL2 {
         }
         secondLast.next = null;
     }
+
+    public void getsize(){
+        System.out.println(size);
+    }
     public static void main(String[] args) {
         LL2 list = new LL2();
         list.addFirst("I am");
@@ -86,6 +99,7 @@ public class LL2 {
         list.display();
         list.deleteFirst();
         list.display();
+        list.getsize();
     }
 
 }
